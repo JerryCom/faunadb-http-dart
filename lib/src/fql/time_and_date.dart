@@ -62,7 +62,7 @@ class DayOfYear extends Expr {
 @JsonSerializable()
 class Epoch extends Expr {
   @JsonKey(name: 'epoch')
-  final int num;
+  final Expr num;
 
   final String unit;
 

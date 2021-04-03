@@ -49,7 +49,7 @@ Map<String, dynamic> _$DayOfYearToJson(DayOfYear instance) => <String, dynamic>{
 
 Epoch _$EpochFromJson(Map<String, dynamic> json) {
   return Epoch(
-    json['epoch'] as int,
+    Expr.fromJson(json['epoch'] as Map<String, dynamic>),
     json['unit'] as String,
   );
 }
