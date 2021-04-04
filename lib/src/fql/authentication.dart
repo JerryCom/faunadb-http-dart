@@ -64,7 +64,7 @@ class HasIdentity extends Expr {
 class Identify extends Expr {
   final Expr identity;
 
-  final String password;
+  final Expr password;
 
   Identify(this.identity, this.password);
 
